@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+      @apply border-2 border-violet-900 bg-violet-900 text-white font-bold text-xl px-6 py-2 rounded-full shadow-[.3rem_.3rem_1rem_rgba(0,0,0,.33)] hover:bg-violet-800 transition-colors duration-500 ease-in-out w-40;
+    }
+
+    .input-primary {
+        @apply text-violet-900 border-2 border-violet-800 bg-violet-200 rounded-l-full p-2 text-center font-bold text-xl w-40 shadow-[.3rem_.3rem_1rem_rgba(0,0,0,.33)];
+    }
+
+    .list-container {
+        @apply my-10 mx-auto max-w-lg border-2 border-violet-800 rounded-xl overflow-hidden shadow-[.3rem_.3rem_1rem_rgba(0,0,0,.33)];
+    }
+
+    li.list-item {
+        @apply capitalize text-left odd:bg-white even:bg-yellow-100 px-4 py-2 m-0 flex items-center;
+    }
+
+    .error-msg {
+        @apply block mt-4 text-red-600 font-semibold;
+    }
+  }
